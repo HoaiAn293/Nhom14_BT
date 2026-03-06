@@ -1,0 +1,34 @@
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fadeIn 0.36s ease-out forwards; }
+
+.card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-100 p-4;
+}
+
+.btn-primary {
+    @apply bg-primary-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-700 transition-colors;
+}
+
+.btn-secondary {
+    @apply bg-white text-gray-700 border border-gray-200 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors;
+}
+
+.input-field {
+    @apply block w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:border-primary-500 focus:ring-primary-200 outline-none;
+}
+
+/* Calendar specific */
+.calendar-grid { grid-template-columns: repeat(7, minmax(0, 1fr)); gap: .5rem; }
+.calendar-day { @apply aspect-square p-2 border rounded-lg cursor-pointer hover:shadow-md transition-shadow; }
+.calendar-day.today { @apply border-primary-300 bg-primary-50; }
+.event-pill { @apply text-xs text-white px-2 py-0.5 rounded truncate; }
+.event-more { @apply text-xs text-gray-500; }
+
+/* Modal helpers */
+#calendar-modal, #event-modal { z-index: 60; }
+
+/* Small utilities used in component preview */
+.min-w-\[3rem\] { min-width: 3rem; }
