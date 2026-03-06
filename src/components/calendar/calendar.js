@@ -1,6 +1,7 @@
 // Calendar state
 let calendarState = {
-  currentDate: new Date(2026, 1, 8), // February 8, 2026
+  // Default to today's date so calendar opens on current month
+  currentDate: new Date(),
   events: [
     {
       id: 1,
