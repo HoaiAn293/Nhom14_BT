@@ -2,7 +2,7 @@
 let calendarState = {
     currentDate: new Date(2026, 1, 8), // February 8, 2026
     events: [
-        { id: 1, title: 'Họp nhóm', date: '2026-02-11', startTime: '09:00', endTime: '10:00', color: 'blue', description: 'Họp nhóm bàn về tiến độ dự án' },
+        { id: 1, title: 'Họp nhóm lớp', date: '2026-02-11', startTime: '09:00', endTime: '10:00', color: 'blue', description: 'Họp nhóm bàn về tiến độ dự án' },
         { id: 2, title: 'Deadline', date: '2026-02-15', startTime: '09:00', endTime: '17:00', color: 'red', description: 'Deadline nộp dự án' },
         { id: 3, title: 'Demo dự án', date: '2026-02-15', startTime: '14:00', endTime: '15:00', color: 'green', description: 'Demo sản phẩm cho khách hàng' },
         { id: 4, title: 'Code Review', date: '2026-02-20', startTime: '10:00', endTime: '11:00', color: 'purple', description: 'Review code với team' }
@@ -64,11 +64,11 @@ function renderCalendarGrid() {
             dayHtml += '<div class="mt-1 space-y-0.5">';
             events.slice(0, 2).forEach(event => {
                 const colorClasses = {
-                    'blue': 'bg-blue-500',
-                    'red': 'bg-red-500',
-                    'green': 'bg-green-500',
-                    'purple': 'bg-purple-500',
-                    'yellow': 'bg-yellow-500'
+                    'blue': 'bg-blue-800',
+                    'red': 'bg-red-200',
+                    'green': 'bg-green-300',
+                    'purple': 'bg-purple-400',
+                    'yellow': 'bg-yellow-200'
                 };
                 dayHtml += `<div class="text-xs ${colorClasses[event.color] || 'bg-blue-500'} text-white px-1 py-0.5 rounded truncate">${event.title}</div>`;
             });
