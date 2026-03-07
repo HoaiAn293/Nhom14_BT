@@ -4,7 +4,7 @@ let calendarState = {
     events: [
         { id: 1, title: 'Họp nhóm', date: '2026-02-11', startTime: '09:00', endTime: '10:00', color: 'blue', description: 'Họp nhóm bàn về tiến độ dự án' },
         { id: 2, title: 'Deadline', date: '2026-02-15', startTime: '09:00', endTime: '17:00', color: 'red', description: 'Deadline nộp dự án' },
-        { id: 3, title: 'Demo', date: '2026-02-15', startTime: '14:00', endTime: '15:00', color: 'green', description: 'Demo sản phẩm cho khách hàng' },
+        { id: 3, title: 'Demo dự án', date: '2026-02-15', startTime: '14:00', endTime: '15:00', color: 'green', description: 'Demo sản phẩm cho khách hàng' },
         { id: 4, title: 'Code Review', date: '2026-02-20', startTime: '10:00', endTime: '11:00', color: 'purple', description: 'Review code với team' }
     ],
     nextId: 5
