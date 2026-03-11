@@ -3,7 +3,7 @@ import './settings.css';
 
 // Dữ liệu mặc định
 const defaultSettings = {
-    name: "Nguyễn Văn A",
+    name: "Nguyễn Văn B",
     email: "nguyenvana@example.com",
     phone: "0987 654 321",
     location: "Hà Nội, Việt Nam",
